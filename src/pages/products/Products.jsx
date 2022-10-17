@@ -24,8 +24,8 @@ const Products = () => {
               <div className="row">
                 <div className="col-4">
                   <div className="d-flex flex-column mb-3">
-                    {prod?.img?.map((oneImg) => (
-                      <div className="p-2">
+                    {prod?.img?.map((oneImg, index) => (
+                      <div className="p-2" key={index}>
                         <img
                           src={oneImg}
                           alt=""

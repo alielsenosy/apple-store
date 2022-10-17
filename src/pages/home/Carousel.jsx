@@ -12,8 +12,8 @@ function UncontrolledExample() {
   }, []);
   return (
     <Carousel>
-      {data.map((slideImg) => (
-        <Carousel.Item>
+      {data.map((slideImg, index) => (
+        <Carousel.Item key={index}>
           <img className="d-block w-100" src={slideImg.img} alt="First slide" />
         </Carousel.Item>
       ))}
